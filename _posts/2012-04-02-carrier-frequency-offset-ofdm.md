@@ -77,12 +77,9 @@ plt.grid(True)
 plt.show()
 ```
 We have to look at the received IQ symbols to study the effect of frequency offset. Shown below are the IQ-constellations generated during the simulation.
-{% include figure.liquid loading="eager" path="assets/img/ideal.png" class="img-fluid rounded z-depth-1" zoomable=true title="Ideal Constellation without Carrier Frequency Offset" %}
-{% include figure.liquid loading="eager" path="assets/img/SC_with_offset.png" class="img-fluid rounded z-depth-1" zoomable=true title="Single Carrier Constellation with Carrier Frequency Offset" %}
-{% include figure.liquid loading="eager" path="assets/img/OFDM_with_offset.png" class="img-fluid rounded z-depth-1" zoomable=true title="OFDM Constellation with Carrier Frequency Offset" %}
-<!-- {{< figure src="assets/img/ideal.png" title="A 4-state trellis diagram" numbered="true" >}} -->
-<!-- {{< figure src="assets/img/SC_with_offset.png" title="A 4-state trellis diagram" numbered="true" >}} -->
-<!-- {{< figure src="assets/img/OFDM_with_offset.png" title="A 4-state trellis diagram" numbered="true" >}} -->
+{% include figure.liquid loading="eager" path="assets/img/ideal.png" class="img-fluid rounded z-depth-1" zoomable=true caption="Ideal Constellation without Carrier Frequency Offset" %}
+{% include figure.liquid loading="eager" path="assets/img/SC_with_offset.png" class="img-fluid rounded z-depth-1" zoomable=true caption="Single Carrier Constellation with Carrier Frequency Offset" %}
+{% include figure.liquid loading="eager" path="assets/img/OFDM_with_offset.png" class="img-fluid rounded z-depth-1" zoomable=true caption="OFDM Constellation with Carrier Frequency Offset" %}
 As seen from the figures above, the constellation points are rotated by varying amounts in the case of a single carrier system whereas, in the case of an OFDM system the constellation points appear noisy. To answer the question of why this difference in the received constellation, we can do a mathematical analysis of the both the systems as follows.
 
 ### Assumptions and Parameters
