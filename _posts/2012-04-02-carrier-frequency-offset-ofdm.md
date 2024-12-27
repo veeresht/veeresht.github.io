@@ -3,7 +3,7 @@ layout: post
 title: Carrier Frequency Offset in Single Carrier and OFDM Systems 
 date: 2012-04-02 15:00:00
 description: Observable effects of carrier frequency offset in OFDM systems v/s single carrier systems.
-tags: formatting code
+tags: carrier-frequency-offset ofdm 
 categories: communication-systems
 featured: false
 ---
@@ -76,9 +76,9 @@ plt.grid(True)
 plt.show()
 ```
 We have to look at the received IQ symbols to study the effect of frequency offset. Shown below are the IQ-constellations generated during the simulation.
-{{< figure src="ideal.png" title="A 4-state trellis diagram" numbered="true" >}}
-{{< figure src="SC_with_offset.png" title="A 4-state trellis diagram" numbered="true" >}}
-{{< figure src="OFDM_with_offset.png" title="A 4-state trellis diagram" numbered="true" >}}
+{{< figure src="assets/img/ideal.png" title="A 4-state trellis diagram" numbered="true" >}}
+{{< figure src="assets/img/SC_with_offset.png" title="A 4-state trellis diagram" numbered="true" >}}
+{{< figure src="assets/img/OFDM_with_offset.png" title="A 4-state trellis diagram" numbered="true" >}}
 As seen from the figures above, the constellation points are rotated by varying amounts in the case of a single carrier system whereas, in the case of an OFDM system the constellation points appear noisy. To answer the question of why this difference in the received constellation, we can do a mathematical analysis of the both the systems as follows.
 
 ### Assumptions and Parameters
