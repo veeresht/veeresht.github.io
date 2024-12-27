@@ -84,17 +84,19 @@ As seen from the figures above, the constellation points are rotated by varying 
 ### Assumptions and Parameters
 Ideal System with frequency offset as the only impairment  
 Modulation Scheme : 64-QAM  
-Sampling Frequency ($F_s$) : 15.36 MHz  
+Sampling Frequency ($$F_s$$) : 15.36 MHz  
 FFT Size in OFDM : 1024 subcarriers  
 Number of Bits : 6144 (equivalent to 1024 64-QAM symbols)  
 ### Single Carrier System  
 Let us denote, the 64-QAM modulated IQ symbols at the transmitter by $x(n)$, the 64-QAM modulated IQ symbols at the receiver by $r(n)$, the frequency offset (in Hz) introduced by $\Delta f$, the sampling frequency (in Hz) of the system by $F_s$.
 
-The relationship between $r(n)$ and $x(n)$ is expressed as
-$$ r(n)=x(n) e^{j2\pi \Delta f n F_s} $$
+The relationship between $$r(n)$$ and $$x(n)$$ is expressed as $$ r(n)=x(n) e^{j2\pi \Delta f n F_s} $$
 This can be further modified as
+
 $$r(n)=A(n)e^{j\theta(n)}e^{j2\pi \Delta fn F_s}$$ 
+
 $$r(n)=A(n)e^{j(\theta(n)+j2\pi \Delta f n F_s)}$$
+
 where $A(n)$ and $\theta(n)$ are the magnitude and the phase of the symbol $x(n)$ respectively. From these equations, it is clear that the frequency offset introduces varying amounts of phase offset depending on the time instant n of the modulated symbol $x(n)$. This explains the varying rotation of the received constellation points observed in Figure 2.
 
 ### OFDM System
@@ -128,4 +130,4 @@ $$ R(m) = \sum_{k=-\infty}^{\infty} X(k)\frac{sin(\pi (m−\frac{\Delta f}{\Delt
 
 This equation shows us that every received IQ symbol is the sum of scaled versions of all the transmitted IQ symbols, the scaling factor depends on $m$, $k$ and the ratio $\frac{\Delta f}{\Delta f_c}$. 
 
-The key point to note is that every IQ symbol (subcarrier) $X(k)$ is a random variable (assuming the data is random) and hence the received IQ symbol $R(m)$ is a sum of random variables which tends to a Gaussian random variable (by the Central Limit Theorem). This explains the observation in Figure 3, where the IQ constellation points appear to be affected by random noise. Since all the subcarriers interfere with the current subcarrier due to the CFO (loss of orthogonality), the effect of CFO on OFDM systems is commonly known by the term Inter-Carrier Interference (ICI).
+The key point to note is that every IQ symbol (subcarrier) $$X(k)$$ is a random variable (assuming the data is random) and hence the received IQ symbol $$R(m)$$ is a sum of random variables which tends to a Gaussian random variable (by the Central Limit Theorem). This explains the observation in Figure 3, where the IQ constellation points appear to be affected by random noise. Since all the subcarriers interfere with the current subcarrier due to the CFO (loss of orthogonality), the effect of CFO on OFDM systems is commonly known by the term Inter-Carrier Interference (ICI).
