@@ -106,11 +106,11 @@ The OFDM signal is generated from the modulated symbols using a inverse Discrete
 
 $$ x(n) = \sum_{n=0}^{N-1} X(k)e^{j2\pi k n N} $$
 
-The relationship between $r(n)$ and $x(n)$ is expressed as
+The relationship between $$r(n)$$ and $$x(n)$$ is expressed as
 
 $$ r(n) = x(n)e^{j2\pi\Delta f n F_s} $$
 
-From the modulation property of the DFT and noting that $\Delta f_c = \frac{F_s}{N}$, we can express the received 64-QAM modulated symbols as
+From the modulation property of the DFT and noting that $$\Delta f_c = \frac{F_s}{N}$$, we can express the received 64-QAM modulated symbols as
 
 $$ R(k) = X\bigg(k−\frac{\Delta f}{\Delta f_c}\bigg) $$  
 
