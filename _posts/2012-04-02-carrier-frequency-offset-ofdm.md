@@ -90,17 +90,17 @@ Number of Bits : 6144 (equivalent to 1024 64-QAM symbols)
 ### Single Carrier System  
 Let us denote, the 64-QAM modulated IQ symbols at the transmitter by $x(n)$, the 64-QAM modulated IQ symbols at the receiver by $r(n)$, the frequency offset (in Hz) introduced by $\Delta f$, the sampling frequency (in Hz) of the system by $F_s$.
 
-The relationship between $$r(n)$$ and $$x(n)$$ is expressed as $$ r(n)=x(n) e^{j2\pi \Delta f n F_s} $$
+The relationship between `$$r(n)$$` and `$$x(n)$$` is expressed as `$$ r(n)=x(n) e^{j2\pi \Delta f n F_s} $$`
 This can be further modified as
 
 $$r(n)=A(n)e^{j\theta(n)}e^{j2\pi \Delta fn F_s}$$ 
 
 $$r(n)=A(n)e^{j(\theta(n)+j2\pi \Delta f n F_s)}$$
 
-where $A(n)$ and $\theta(n)$ are the magnitude and the phase of the symbol $x(n)$ respectively. From these equations, it is clear that the frequency offset introduces varying amounts of phase offset depending on the time instant n of the modulated symbol $x(n)$. This explains the varying rotation of the received constellation points observed in Figure 2.
+where `$$A(n)$$`and `$$\theta(n)$$` are the magnitude and the phase of the symbol `$$x(n)$$` respectively. From these equations, it is clear that the frequency offset introduces varying amounts of phase offset depending on the time instant n of the modulated symbol `$$x(n)$$`. This explains the varying rotation of the received constellation points observed in Figure 2.
 
 ### OFDM System
-Let us denote, the 64-QAM modulated IQ symbols at the transmitter by $X(k)$, the OFDM signal at the transmitter by $x(n)$, the OFDM signal at the receiver by $r(n)$, the 64-QAM modulated IQ symbols at the receiver by $R(k)$, the frequency offset (in Hz) introduced by $\Delta f$,the sampling frequency (in Hz) of the system by $ F_{s}$ , the sub-carrier spacing (in Hz) of the system by $\Delta f_c$, the number of subcarriers (size of the DFT/IDFT) by $N$.
+Let us denote, the 64-QAM modulated IQ symbols at the transmitter by `$$X(k)$$`, the OFDM signal at the transmitter by `$$x(n)$$`, the OFDM signal at the receiver by `$$r(n)$$`, the 64-QAM modulated IQ symbols at the receiver by `$$R(k)$$`, the frequency offset (in Hz) introduced by `$$\Delta f$$`,the sampling frequency (in Hz) of the system by `$$ F_{s} $$`, the sub-carrier spacing (in Hz) of the system by `$$\Delta f_c$$`, the number of subcarriers (size of the DFT/IDFT) by `$$N$$`.
 
 The OFDM signal is generated from the modulated symbols using a inverse Discrete Fourier Transform (IDFT) and is given by
 
