@@ -6,6 +6,7 @@ description: Example for generating trellis diagram plots with CommPy.
 tags: trellis-diagram commpy python 
 categories: communication-systems
 featured: false
+thumbnail: assets/img/8_trellis.png
 ---
 A trellis diagram is a representation of a convolutional code. During the study of convolutional and turbo codes, one often encounters situations where we would like to visualize the trellis diagram representation of a simple 4-state or an 8-state convolutional code.
 
@@ -45,7 +46,7 @@ bit_colors = ['#FF0000', '#00FF00']
 trellis.visualize(trellis_length, state_order, 
                   edge_colors = bit_colors)
 ```
-{{< figure src="assets/img/4_trellis.png" title="A 4-state trellis diagram" numbered="true" >}}
+{% include figure.liquid loading="eager" path="assets/img/4_trellis.png" class="img-fluid rounded z-depth-1" zoomable=true caption="A 4-state trellis diagram" %}
 The snippet of code above and the trellis diagram correspond to the convolutional code generated using the encoder matrix,
 
 $$ G(D)=[1+D^2,1+D+D^2] $$
@@ -57,4 +58,4 @@ Shown below is another trellis diagram representation of the encoder matrix
 
 $$ G(D)=[1+D^2+D^3,1+D+D^2+D^3] $$
 
-{{< figure src="assets/img/8_trellis.png" title="An 8-state trellis diagram" numbered="true" >}}
+{% include figure.liquid loading="eager" path="assets/img/8_trellis.png" class="img-fluid rounded z-depth-1" zoomable=true caption="An 8-state trellis diagram" %}
