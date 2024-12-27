@@ -1,10 +1,10 @@
 ---
 layout: post
-title: a post with code
+title: Carrier Frequency Offset in Single Carrier and OFDM Systems 
 date: 2012-04-02 15:00:00
 description: Observable effects of carrier frequency offset in OFDM systems v/s single carrier systems.
 tags: formatting code
-categories: communication theory and systems
+categories: communication-systems
 featured: false
 ---
 
